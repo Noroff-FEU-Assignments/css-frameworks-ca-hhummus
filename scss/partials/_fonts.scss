@@ -1,0 +1,46 @@
+$logo-font: 'Playfair Display', serif;
+$primary-font: 'Lato', sans-serif;
+
+body  {
+    font-family: $primary-font;
+
+    & a.nav-link {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    & button.btn-outline-success {
+        font-size: 15px;
+    }
+
+   & .form-control {
+        font-size: 14px;
+    }
+
+    & .news {
+        font-family: $logo-font;
+        font-style: normal;;
+        font-weight: 100;
+        font-size: 34px;
+      
+    }
+
+    & .card-button {
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 16px;
+
+    }
+
+    .form-check-label {
+        font-size: 14px;
+    }
+}
+
+.navbar-brand {
+    font-family: $logo-font;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 20px;
+    padding: 0;
+}

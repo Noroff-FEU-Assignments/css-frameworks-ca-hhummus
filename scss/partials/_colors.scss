@@ -1,0 +1,199 @@
+$bg-color: radial-gradient(#ffffff,#e5e5e5);
+$light-grey: #efefef;
+$middle-grey: #c7c7c7;
+$dark-grey: #767676;
+$white: #ffffff;
+$black: #0a0a0a;
+$pinked: #e92469;
+
+
+//global nav//
+nav.navbar {
+    background-color: $light-grey !important;
+
+    & a.navbar-brand {
+        color: $pinked !important;
+    }
+
+    & a.nav-link {
+        color: $black !important;
+    }
+
+    & button.btn-outline-success {
+        background-color: $pinked !important;
+        color: $white !important;
+    }
+
+    & a.nav-link.active {
+        background-color: $white !important;
+    }
+}
+
+.navbar-light .navbar-toggler {
+    border-color: rgba(0,0,0,0);
+
+}
+
+body {
+    background: $bg-color !important;
+}
+
+//home carousel //
+.carousel-indicators [data-bs-target] {
+    background-color: $white;
+    height: 30px;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+    0 2px 4px rgba(0,0,0,0.07), 
+    0 4px 8px rgba(0,0,0,0.07), 
+    0 8px 16px rgba(0,0,0,0.07),
+    0 16px 32px rgba(0,0,0,0.07), 
+    0 32px 64px rgba(0,0,0,0.07);
+}
+
+.carousel-indicators .active {
+    background-color: $pinked;
+}
+
+// home text//
+.container {
+
+    &__h2 {
+        color: $pinked;
+    }
+
+    &__p {
+        color: $dark-grey;
+    }
+}
+
+//shadow for cards and form//
+.accordion, 
+.card, .form-input-data {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                0 2px 4px rgba(0,0,0,0.07), 
+                0 4px 8px rgba(0,0,0,0.07), 
+                0 8px 16px rgba(0,0,0,0.07),
+                0 16px 32px rgba(0,0,0,0.07), 
+                0 32px 64px rgba(0,0,0,0.07);
+}
+
+//index card 
+.accordion-button:not(.collapsed) {
+    border-bottom: 1px solid $pinked;
+    color: $pinked;
+    background: $white;
+}
+
+.accordion-button::after {
+    background-image: none;
+    content: none;
+}
+
+.accordian-header{
+    background-color: $white;
+    border-bottom: 1px solid $pinked;
+}
+
+.card__button {
+    color: $pinked;
+    text-decoration: none;
+}
+
+.card-body {
+    background-color: $light-grey;
+    color: $dark-grey;
+}
+
+
+// News site //
+.btn-outline-primary {
+    color: $pinked;
+    background-color: $white;
+    border-color: $pinked;
+
+    &:hover {
+        color: $white;
+        background-color: $pinked;
+    }
+
+    &:focus {
+       outline: $pinked;
+    }
+    &:active {
+        color: $white;
+        background-color: $pinked;
+    }
+}
+
+.btn-primary {
+    color: $white;
+    background-color: $pinked;
+    border-color: $pinked;
+
+    &:hover,
+    &:focus {
+        background-color: $pinked;
+    }
+}
+
+.btn-outline-primary.active {
+    background-color: $pinked;
+}
+
+.card-title {
+    color: $black;
+}
+
+
+//contact
+.contact {
+    color: $dark-grey;
+}
+
+.btn-contact-submit {
+    background: $dark-grey;
+    color: $white;
+    border-color: $dark-grey;
+
+    &:hover,
+     &:focus,
+      &:active {
+        background: $dark-grey;
+        
+    }
+}
+
+
+.form-input-data {
+    background-color: $light-grey;
+}
+
+.form-check-input {
+    background-color: $pinked;
+}
+
+.form-check-label {
+    color: $dark-grey
+}
+
+.form-label {
+    color: $dark-grey;
+}
+
+//global footer//
+.footer {
+    background-color: $white;
+
+    &__p {
+        color: $dark-grey;
+    }
+}
+
+
+/// desktop
+@media (min-width: 992px) {
+    .card-body {
+        background-color: $white;
+    }
+}

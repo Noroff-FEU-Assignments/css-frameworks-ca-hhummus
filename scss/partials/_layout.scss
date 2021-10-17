@@ -1,0 +1,248 @@
+.navbar-nav .nav-link {
+    padding-left: 30px !important;
+}
+
+a.nav-link.active {
+    border-radius: 3px;
+}
+
+.search-layout {
+    padding: 1em 0 1em 0;
+
+        & .me-2 {
+            margin: 0 !important;
+            border: none;
+            border-radius: none;
+        }
+    
+
+    & .btn {
+        border-radius: 0 3px 3px 0;
+        border: none;
+    }
+}
+
+.container-fluid, 
+.container {
+    padding: 0 34px;
+}
+ 
+.navbar-toggler {
+    padding: 0 16px 0 16px;
+}
+
+.navbar-collapse {
+    padding-top: 1rem;
+}
+.container {
+
+    &__h2 {
+       padding-top: 1.5rem;;
+    }
+
+}
+
+.img-fluid {
+   max-width: 100%;
+}
+.accordion {
+    margin: 77px 34px 0 34px;
+}
+
+
+// news site//
+.btn-news {
+    width: 52px;
+    height:48px;
+}
+
+.news__container {
+    margin-top: 47px;
+}
+.card {
+    overflow: hidden;
+    border-radius: 0.9rem;
+}
+
+.card__container {
+    padding-top: 40px;
+}
+
+.btn-primary {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-of-all-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+//contact 
+
+.contact{
+    display: block;
+
+    &__information {
+        margin-top: 47px;
+        
+    }
+
+    &__icon {
+        padding-right: 1rem;
+    }
+    &__p {
+        display: inline-flex;
+    }
+
+    &__space {
+        padding: 0 0.5rem;
+    }
+}
+
+.form-input-data {
+    margin-top: 47px;
+    padding: 20px 47px 2px 47px;
+
+}
+
+.form-check-label {
+    padding-left: 0.4rem;
+}
+
+//form 
+
+.form-check-input {
+    background-color: $pinked;
+    padding: 0.6rem;
+}
+
+//footer
+.footer {
+    margin-top: 100px;
+    padding: 2rem 0 0 0;
+
+    &__div {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__inline{
+        display: inline-flex;
+    }
+
+    &__mobile {
+        display: inline-flex;
+    }
+
+    &__left {
+        padding-left: 34px
+    }
+
+    &__right {
+        float: right;
+        padding-right: 34px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .search-layout {
+        padding-right: 16px
+    }
+
+    .navbar-brand {
+        padding: 0 75px;
+    }
+    .navbar-nav .nav-link  {
+        padding-left: 8px !important;
+    }
+
+    .navbar-collapse {
+        justify-content: space-between;
+        padding-top: 0;
+    }
+
+    .nav-link {
+        padding: 0;
+    }
+
+    .container__desktop {
+        margin:  75px;
+        padding: 0;
+    }
+
+    .accordion {
+        display: flex;
+    }
+
+    .accordion-item .collapse {
+        background-color: pink;
+    }
+    .accordion-button:not(.collapsed) {
+        border-bottom: none;
+        box-shadow: none;
+    }
+
+   .accordion-item {
+       border: none;
+   }
+
+    .card-body {
+        display: inline-flex;  
+        justify-content: space-around;   
+        
+        & p {
+            padding: 0 30px;
+        }
+    } 
+
+    .card-body-news {
+        display: block;
+       
+        & p {
+            padding: 0;
+        }
+    }
+
+    .card__container {
+        margin-top: 47px;
+        padding: 10px;
+    }
+    .contact {
+        margin: 0 57px;
+    }
+
+    .contact-display {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 0 109px;
+        margin: 0;
+    }
+
+    
+    .footer {
+        display: flex;
+            &__p {
+                padding-top: 1rem;
+            }
+
+            & i {
+                padding: 0 0.3rem;
+            }
+
+            &__left {
+                padding: 0;
+            }
+        
+            &__right {
+                float: none;
+                padding: 0;
+            }
+
+            &__padding {
+                padding: 0 75px;
+                 justify-content: space-between;
+            }
+    }
+ }
